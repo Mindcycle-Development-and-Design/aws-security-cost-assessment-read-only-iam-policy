@@ -2,14 +2,6 @@
     "Version": "2012-10-17",
     "Statement": [
         {
-            "Sid": "GeneralReadOnlyAccess",
-            "Effect": "Allow",
-            "Action": [
-                "arn:aws:iam::aws:policy/ReadOnlyAccess"
-            ],
-            "Resource": "*"
-        },
-        {
             "Sid": "SpecificAuditPermissions",
             "Effect": "Allow",
             "Action": [
@@ -35,7 +27,6 @@
                 "securityhub:GetFindings",
                 "securityhub:DescribeHub",
                 "trustedadvisor:Describe*",
-                // Add any other specific service actions required for your audits here
             ],
             "Resource": "*"
         }
