@@ -1,0 +1,43 @@
+{
+    "Version": "2012-10-17",
+    "Statement": [
+        {
+            "Sid": "GeneralReadOnlyAccess",
+            "Effect": "Allow",
+            "Action": [
+                "arn:aws:iam::aws:policy/ReadOnlyAccess"
+            ],
+            "Resource": "*"
+        },
+        {
+            "Sid": "SpecificAuditPermissions",
+            "Effect": "Allow",
+            "Action": [
+                "budgets:ViewBudget",
+                "ce:GetCostAndUsage",
+                "cloudtrail:GetInsightSelectors",
+                "cloudtrail:DescribeTrails",
+                "cloudtrail:GetTrailStatus",
+                "cloudtrail:ListTags",
+                "cloudwatch:DescribeAlarms",
+                "cloudwatch:GetDashboard",
+                "cloudwatch:ListMetrics",
+                "config:DeliverConfigSnapshot",
+                "config:GetComplianceDetailsByConfigRule",
+                "guardduty:ListDetectors",
+                "guardduty:GetFindings",
+                "iam:GetAccessKeyLastUsed",
+                "iam:GetAccountAuthorizationDetails",
+                "macie2:GetFindingStatistics",
+                "macie2:ListFindings",
+                "access-analyzer:ListFindings",
+                "access-analyzer:GetAnalyzedResource",
+                "securityhub:GetFindings",
+                "securityhub:DescribeHub",
+                "trustedadvisor:Describe*",
+                // Add any other specific service actions required for your audits here
+            ],
+            "Resource": "*"
+        }
+    ]
+}
