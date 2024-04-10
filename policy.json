@@ -26,7 +26,7 @@
                 "access-analyzer:GetAnalyzedResource",
                 "securityhub:GetFindings",
                 "securityhub:DescribeHub",
-                "trustedadvisor:Describe*",
+                "trustedadvisor:Describe*"
             ],
             "Resource": "*"
         }
