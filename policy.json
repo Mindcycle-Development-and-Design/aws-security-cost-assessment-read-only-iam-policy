@@ -5,8 +5,9 @@
             "Sid": "SecurityCostAuditPermissions",
             "Effect": "Allow",
             "Action": [
-                "budgets:ViewBudget",
-                "ce:GetCostAndUsage",
+                "aws-portal:ViewBilling",
+                "aws-portal:ViewUsage",
+                "trustedadvisor:*",
                 "cloudtrail:GetInsightSelectors",
                 "cloudtrail:DescribeTrails",
                 "cloudtrail:GetTrailStatus",
@@ -22,8 +23,7 @@
                 "iam:GetAccountAuthorizationDetails",
                 "macie2:GetFindingStatistics",
                 "macie2:ListFindings",
-                "access-analyzer:ListFindings",
-                "access-analyzer:GetAnalyzedResource",
+                "access-analyzer:*",
                 "securityhub:GetFindings",
                 "securityhub:DescribeHub",
                 "trustedadvisor:Describe*"
